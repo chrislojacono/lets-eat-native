@@ -51,7 +51,7 @@ function handleHelpPress() {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    backgroundColor: "#52a8ff",
+    backgroundColor: Colors.colors.babyBlue,
   },
   getStartedContainer: {
     alignItems: 'center',

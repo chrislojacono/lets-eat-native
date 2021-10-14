@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-
+import Colors from '../constants/Colors';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
@@ -19,11 +19,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
+    backgroundColor: Colors.colors.babyBlue,
+    padding: 20
   },
   title: {
     fontSize: 40,
     fontWeight: 'bold',
+    color: Colors.colors.offWhiteHeader,
   },
   separator: {
     marginVertical: 30,
