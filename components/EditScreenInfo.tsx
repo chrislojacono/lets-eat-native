@@ -8,7 +8,7 @@ import { Text, View } from './Themed';
 
 export default function EditScreenInfo({ path }: { path: string }) {
   return (
-    <View>
+    <View style={styles.mainContainer}>
       <View style={styles.getStartedContainer}>
         <Text
           style={styles.getStartedText}
@@ -50,9 +50,13 @@ function handleHelpPress() {
 }
 
 const styles = StyleSheet.create({
+  mainContainer: {
+    backgroundColor: Colors.colors.babyBlue,
+  },
   getStartedContainer: {
     alignItems: 'center',
     marginHorizontal: 50,
+    borderRadius: 5,
   },
   homeScreenFilename: {
     marginVertical: 7,
@@ -70,6 +74,7 @@ const styles = StyleSheet.create({
     marginTop: 15,
     marginHorizontal: 20,
     alignItems: 'center',
+    borderRadius: 5,
   },
   helpLink: {
     paddingVertical: 15,

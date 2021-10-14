@@ -16,4 +16,8 @@ export default {
     tabIconDefault: '#ccc',
     tabIconSelected: tintColorDark,
   },
+  colors: {
+    babyBlue: "#52a8ff",
+    offWhiteHeader: "#fafcff"
+  }
 };

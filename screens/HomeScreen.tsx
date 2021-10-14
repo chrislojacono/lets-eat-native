@@ -1,15 +1,16 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-
+import Colors from '../constants/Colors';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
+import { RootTabScreenProps } from '../types';
 
-export default function TabTwoScreen() {
+export default function HomeScreen({ navigation }: RootTabScreenProps<'Home'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
+      <Text style={styles.title}>Lets Eat!</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
+      <EditScreenInfo path="/screens/HomeScreen.tsx" />
     </View>
   );
 }
@@ -18,15 +19,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
+    backgroundColor: Colors.colors.babyBlue,
+    padding: 20
   },
   title: {
-    fontSize: 20,
+    fontSize: 40,
     fontWeight: 'bold',
+    color: Colors.colors.offWhiteHeader,
   },
   separator: {
     marginVertical: 30,
     height: 1,
-    width: '80%',
+    width: '90%',
   },
 });
